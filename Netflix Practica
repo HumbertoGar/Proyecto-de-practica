@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Netflix.com</title>
+	
+
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*,a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}
+
+
+
+/*-- PAGINA --*/
+
+body{
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.container {
+
+    width: 100%;
+    height: 1000px;
+    
+    /*flex*/
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header{
+    
+    padding-bottom: 150px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)),url("../Img/VE-en-20200617-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+   
+}
+
+
+.footer{
+    
+   
+    margin: 100px 100px 70px 100px;
+    
+}
+
+.footer span a{
+    color: gray;
+}
+
+.footerContainerList{
+    margin: 20px 0;
+    /*flex*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+ul a {
+    color: gray;
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+.footerExtra h4{
+    color: gray;
+}
+
+/*Arreglos Especificos*/
+
+
+
+.header-content > h1  {
+    font-size: 3.4em;
+    text-align: center;
+}
+
+.header-content > h2 {
+    font-size: 2em;
+}
+
+.header-content-email{
+   display: inline-block;
+   margin-top: 20px;
+    
+}
+
+header .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo img{
+    margin:0;
+    width: 164px;
+    margin-left: 40px;
+}
+
+.header-content{
+   margin-top: 50px;
+}
+
+.signIn{
+    position: relative;
+    background-color: #e50914;
+    border-color:  #92060d;
+    color: white;
+    border-radius: 10%;
+    margin: 20px 40px;
+    padding: 10px 10px;
+    width: 7%;
+    cursor: pointer;
+}
+
+#emailGetStarted{
+    margin: 40px 0 0 0;
+    width: 60%;
+    height: 50px;
+   
+}
+
+#getStartedButton{
+    position: relative;
+    width: 140px;
+    height: 50px;
+    background-color: #e50914;
+    color: white;
+    border-color:  #e50914;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+
+.email-form-title{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.main-content{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.subContent-1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 200px;
+    
+}
+
+.subContentTxt-1{
+  text-align: center;
+    
+}
+
+.subContentTxt-1 h1,h2{
+    font-size: 2.2em;
+}
+
+.subContent-2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 200px;
+    
+}
+
+.subContentTxt-2{
+  
+    text-align: center;
+  }
+  
+  .subContentTxt-2 h1,h2{
+      font-size: 2.2em;
+  }
+  
+
+.subContent-3{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.subContentTxt-3{
+
+    text-align: center;
+  }
+  
+  .subContentTxt-3 h1,h2{
+      font-size: 2.2em;
+  }
+  
+
+
+.subContent-4{
+   
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+/*Media Query*/
+
+@media (max-width: 1000px){
+    .main-content{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .subContent-1{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .subContent-2{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .subContent-3{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
+@media (max-width: 675px){
+    header{
+        font-size: 0.6em;
+    }
+    
+    .subContent-1 {
+        font-size: 0.6em;
+    }
+    .subContent-1 img{
+        display: none;
+    }
+
+    .subContent-2 {
+        font-size: 0.6em;
+    }
+
+    .subContent-2 img{
+        display: none;
+    }
+
+    .subContent-3 {
+        font-size: 0.6em;
+    }
+
+    .subContent-3 img{
+        display: none;
+    }
+
+    .header-content-email{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+	
+	<header>
+	
+		
+		<div class="menu">
+			<div class="logo">
+				<img src="./Img/logo.png" alt="Logo-netflix.png">
+			</div>
+			
+			<input type="button" value="Sign In" class="signIn">
+		</div>
+		
+		<div class="header-content">
+			
+			<h1>Thousands of TV shows &  </br>  movies.
+				Entertainment guaranteed.</h1>
+			</br>
+		</br>
+		<h2>You'll love Netflix! If you don't, cancel within 7 days for </br>a refund.</h2>
+		</div>
+	<div class="header-content-email">
+	</br>
+	<input type="email" placeholder="Email Address" name="emailGetStarted" id="emailGetStarted">
+	<input type="button" value="GET STARTED >" id="getStartedButton">
+	<h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
+	</div>
+		
+	</header>
+	
+	<div class="main">
+		
+		<section class="main-content">
+			
+			<div class="subContent-1">
+				<div class="subContentTxt-1">
+					<h1>Enjoy on your TV.</h1>
+					<br/>
+					<br/>
+					<h2>Watch on Smart TVs, Playstation, Xbox,<br/> Chromecast, Apple TV, Blu-ray players, and <br/> more.</h2>
+				</div>
+				<div class="imgSubContent-1">
+					<img src="./Img/tv.png" alt="">
+				</div>
+			</div>
+			
+			
+			<div class="subContent-2">
+				<div class="imgSubContent-2">
+					<img src="./Img/mobile-0819.jpg" alt="">
+					<!-- <div class="animationSubContent-2">
+						<div class="animationSubcontent-2img">
+							<img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="">
+						</div>
+						<div class="animationSubContent-2txt">
+							<p class="titleAnimation">Stranger Things</p>
+							<p class="dowloading">dowloading...</p>
+						</div>	
+					</div> -->
+				</div>
+				<div class="subContentTxt-2">
+					<h1>Download your shows to watch offline.</h1>
+					<br/>
+					<br/>
+					<h2>Save your favorites easily and always have something to watch.</h2>
+				</div>
+			</div>
+			
+			
+			<div class="subContent-3">
+				<div class="subContentTxt-3">
+					<h1>Enjoy on your TV.</h1>
+					<br/>
+					<br/>
+					<h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h2>
+				</div>
+				<div class="imgSubContent-3">
+					<img src="./Img/device-pile.png" alt="">
+				</div>
+			</div>
+			
+			
+			<!-- <div class="subContent-4">
+				<div class="subContentTxt-4">
+					<h3>Enjoy on your TV.</h3>
+					<br/>
+					<br/>
+					<h4>Watch on Smart TVs, Playstation, Xbox,<br/> Chromecast, Apple TV, Blu-ray players, and <br/> more.</h3>
+					</div>
+					<div class="imgSubContent-4">
+						IMG
+					</div>
+				</div> -->
+				
+			</section>
+			
+		</div>
+		
+		
+		
+		<footer class="footer">
+			<span>
+				
+				<a>Questions? Call +1 (408) 469-4467 (USA)</a>
+			</span>
+		</br>
+		<div class="footerContainerList">
+			<ul class="footerList-1">
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Investor Relations</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Speed Test</a></li>
+			</ul>
+			<ul class="footerList-2">
+				<li><a href="#">Help Center</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">Cookie Preferences</a></li>
+				<li><a href="#">Legal Notices</a></li>
+			</ul>
+			<ul class="footerList-3">
+				<li><a href="#">Account</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Netflix Originals</a></li>
+			</ul>
+			<ul class="footerList-4">
+				<li><a href="#">Media Center</a></li>
+				<li><a href="#">Term of use</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="footerExtra">
+			<h4>Netflix Venezuela</h4>
+		</div>
+		
+	</footer>
+</div>
+</body>
+</html>
